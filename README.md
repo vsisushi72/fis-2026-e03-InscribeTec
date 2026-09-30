@@ -1,4 +1,4 @@
-#InscribeTec
+## InscribeTec
 
 Equipo : EQ-08
 
