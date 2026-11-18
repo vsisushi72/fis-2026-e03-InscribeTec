@@ -1,3 +1,5 @@
+# Aporte individual — Britany Gisell Olivares Méndez
+
 **Proyecto:** InscribeTec
 **Sección del proceso asignada:** Consulta de oferta académica y selección interactiva de materias en el horario (RF-03 y RF-04) 
 **Rol principal de la U3:** Calidad y Documentación
