@@ -20,3 +20,27 @@
 ## 3. Necesidad identificada
 - **`N-02`:** Permitir al alumno seleccionar sus materias disponibles, confirmar su carga y consultar su horario semanal en línea (`F-01`, `F-02`).
 - **`N-03`:** Asegurar que el horario solo pueda confirmarse cuando el alumno cuente con su pago previo acreditado en el sistema (`F-01`).
+
+## 4. Requisitos propuestos y criterios de aceptación
+
+### `RF-05` — Confirmación de horario con pago previo acreditado
+- **Tipo:** Funcional (RF)
+- **Enunciado verificable:** El sistema debe permitir al alumno confirmar su horario armado con las materias marcadas cuando su estatus de pago previo se encuentre acreditado.
+- **Fuente:** `F-01`, `F-02` / `N-02`
+- **Prioridad:** P1 — Es indispensable para formalizar la selección de materias del estudiante y completar el recorrido principal.
+- **Estado:** Propuesto / Confirmado
+- **Criterio de aceptación:**
+  - **Condición (Dado):** El alumno se encuentra autenticado en `02. Acción · Arma tu horario`, tiene al menos una materia marcada y su estatus de pago previo aparece como acreditado.
+  - **Acción (Cuando):** Presiona el botón **"Confirmar horario"**.
+  - **Resultado esperado (Entonces):** El sistema registra la carga académica, muestra la vista `03A. Éxito · Confirmación de horario` y habilita la visualización en `04. Resultado · Mi horario`.
+
+### `RF-06` — Bloqueo de confirmación y aviso por pago no realizado
+- **Tipo:** Funcional (RF)
+- **Enunciado verificable:** El sistema debe impedir la confirmación del horario y mostrar en texto un aviso indicando que el pago no ha sido realizado cuando el alumno tenga pendiente dicho requisito previo.
+- **Fuente:** `F-01` / `N-03` (`RG-01`)
+- **Prioridad:** P1 — Garantiza el cumplimiento de la regla institucional de elegibilidad previa (`RG-01`).
+- **Estado:** Propuesto / Confirmado
+- **Criterio de aceptación:**
+  - **Condición (Dado):** El alumno se encuentra autenticado en `02. Acción · Arma tu horario`, tiene materias marcadas pero su estatus de pago previo figura como no realizado.
+  - **Acción (Cuando):** Presiona el botón **"Confirmar horario"** (o activa la simulación de pago pendiente).
+  - **Resultado esperado (Entonces):** El sistema bloquea la confirmación, impide avanzar a `04. Resultado · Mi horario` y despliega un aviso claro en texto en `03B. Error` indicando que el pago no ha sido realizado (`RNF-01`).
