@@ -5,21 +5,22 @@ Equipo : EQ-08
 
 ## Integrantes
 
-- Luis Fernando Villalobos Hernandez 	-	Coordinacion
-- Drusila Bestabe Flores Chavez 	    - 	Documentacion
-- Juan Antonio Monsivais Fuantos 	    -   Desarrollo
-- Britany Gisell Olivares Mendez 	    -   Analisis
-
+- Luis Fernando Villalobos Hernandez 	-	Desarrollo
+- Drusila Bestabe Flores Chavez 	    - 	Analisis
+- Juan Antonio Monsivais Fuantos 	    -   Coordinacion
+- Britany Gisell Olivares Mendez 	    -   Calidad y documentacion
 
 ## Organizacion 
 
-- docs/U1-E01:          expediente del equipo
-- docs/U1-E02:          analisis individuales
-- docs/U1-E04:          registros de contribuciones
-- gestion/acuerdos:     acuerdos del equipo
-- gestion/bitacoras:    bitacoras o referencias
+- docs/U1:              documentos de la Unidad 1
+- docs/U2:              documentos de la Unidad 2
+- docs/U3:              documentos de la Unidad 3
+- docs/U3/aportes:      aportes de cada integrante
+- docs/U3/prototipo:    prototipo del proyecto
+- gestion/acuerdos:     acuerdos de trabajo del equipo
+- gestion/bitacoras:    bitacoras de cada integrante, organizadas por unidad (U1, U2 y U3)
 
 ## Seguimiento
 
 -Trello: (https://trello.com/b/HIAEtngr/inscribetec)
--Classroom: entrega oficial
+-Aula:   entrega oficial
